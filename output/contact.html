@@ -4,136 +4,113 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Infrastructure - Apache Infrastructure</title>
-    <link rel="stylesheet" href="https://infra-test.apache.org/theme/css/foundation.css">
-    <link rel="stylesheet" href="https://infra-test.apache.org/theme/css/app.css">
-    <link rel="stylesheet" href="https://infra-test.apache.org/theme/css/font-awesome.min.css">
-    <style type="text/css">
-      .frontbox {
-        border-radius: 10%;
-        border: 1px solid #999; background: #444; color: #EEE; padding: 8px; margin: 5px;
-      }
-      .frontbox:hover {
-        border-top: 6px solid #1583CC;
-        margin-top: 0px;
-        cursor: pointer;
-      }
-    </style>  </head>
-  <body style="background: #C9B191;">
-    <!-- Menu bar --->
-    <div class="row">
-      <div class="top-bar" style="padding: 0; margin-bottom: 10px; background: #222; border: 1px solid #DDD; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;">
-        <div class="hide-for-small-only">
-          <div class="top-bar-left">
-            <ul class="menu" style="background: #222; padding: 0px; line-height: 1; border-bottom-left-radius: 4px;">
-              <li class="notable-logo"><a href="/" target="_self" style="padding: 3px; padding-left: 7px;">
-                <img style="vertical-align: middle;" src='https://infra-test.apache.org/theme/images/feather.png' width='18'/><span style="font-size: 1.30rem; color: #1583CC; text-transform: uppercase;">Apache Infrastructure</span></a>
-              </li>
+    <title>Contact the Infrastructure Team - Apache Infrastructure Website</title>
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/fontawesome.all.min.css" rel="stylesheet">
+<link href="/css/headerlink.css" rel="stylesheet">
+<script src="/highlight/highlight.min.js"></script>  </head>
+  <body class="d-flex flex-column h-100">
+  <main class="flex-shrink-0">
+      <div>
+
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/images/feather.png" style="height: 32px;"/> Apache Infrastructure</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarADP" aria-controls="navbarADP" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarADP">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/infra-news.html">News</a></li>
+                        <li><a class="dropdown-item" href="/blog/">The Infrastructure Blog</a></li>
+                        <li><a class="dropdown-item" href="/roundtable.html">The Infrastructure Roundtable</a></li>
+                        <li><a class="dropdown-item" href="/team.html">About the team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/policies.html">Policies</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Services and Tools</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/services.html">Services and Tools</a></li>
+                        <li><a class="dropdown-item" href="https://blocky.apache.org/">Blocky</a></li>
+                        <li><a class="dropdown-item" href="https://app.datadoghq.com/account/login?next=%2Finfrastructure">DataDog</a></li>
+                        <li><a class="dropdown-item" href="https://whimsy.apache.org/roster/committer/" target="_blank">Committer Search</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/doc.html">Contribute</a></li>
+                        <li><a class="dropdown-item" href="/infra-volunteer.html">Volunteer with Infra</a></li>
+                        <li><a class="dropdown-item" href="/how-to-mirror.html">Become an ASF download mirror</a></li>
+                        <li><a class="dropdown-item" href="/hosting-external-agent.html">Host a Jenkins or Buildbot agent</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stats.html">Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
             </ul>
-          </div>
-          <div class="top-bar-right">
-            <ul class="dropdown menu horizontal" data-dropdown-menu style="background: #222; font-size: 0.8rem; text-transform: uppercase; padding-top: 5px;">
-              <li><a href="/reference/" target="_self" style="padding-left: 5px;">Documentation</a></li>
-              <li class="is-dropdown-submenu-parent">
-                <a href="#" target="_self" style="padding-left: 0px;">Services and Status</a>
-                <ul class="menu" style="background: #222; font-size: 0.7rem; text-transform: uppercase; padding-top: 5px; margin-top: 5px;">
-                <li><a href="https://status.apache.org/" >Status Report</a></li>
-                <li><a href="https://issues.apache.org/jira/" >JIRA</a></li>
-                <li><a href="https://cwiki.apache.org/" >Confluence</a></li>
-                <li><a href="https://builds.apache.org/" >Jenkins</a></li>
-                <li><a href="https://ci.apache.org/" >Buildbot</a></li>
-                </ul>
-              </li>
-              <li class="is-dropdown-submenu-parent">
-                <a href="#" target="_self" style="padding-left: 7px;">Self Serve</a>
-                <ul class="menu" style="background: #222; font-size: 0.7rem; text-transform: uppercase; padding-top: 5px; margin-top: 5px;">
-                  <li><a href="/self-serve/acreq/">Account requests</a></li>
-                  <li><a href="/self-serve/mlreq/">Mailing lists</a></li>
-                  <li><a href="/self-serve/reporeq/">New git repository</a></li>
-                  <li><a href="/self-serve/id/">Edit account information</a></li>
-                  <li><a href="/contact.html">Other inquiries</a></li>
-                </ul>
-              </li>
-              <li class="is-dropdown-submenu-parent">
-                <a href="#" target="_self" style="padding-left: 7px;">About</a>
-                <ul class="menu" style="background: #222; font-size: 0.7rem; text-transform: uppercase; padding-top: 5px; margin-top: 5px;">
-                  <li><a href="/team.html">About the team</a></li>
-                  <li><a href="/policies.html">Our policies</a></li>
-                  <li><a href="/roadmap.html">Strategies & Roadmap</a></li>
-                  <li><a href="/contact.html">Contact infrastructure</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+        </div>
+    </div>
+</nav>    
+
+
+<!-- page contents -->
+<div id="contents">
+    <div class="bg-white p-5 rounded">
+        <div class="col-sm-8 mx-auto">
+          <h1>
+              Contact the Infrastructure Team
+          </h1>
+              <h3>Request a change to the main ASF website</h3>
+<p>The Marketing and Publicity (M&amp;P) committee is responsible for the main ASF website. The source for the website is at <a href="https://github.com/apache/www-site" target="_blank">github.com/apache/www-site</a>. You can create an Issue there to state what you think should change, and what you propose the change to be.</p>
+<h3>Request a change to the Infrastructure website</h3>
+<p>The source for this website is at <a href="https://github.com/apache/infrastructure-website" target="_blank">github.com/apache/infrastructure-website</a>. You can create an Issue there to state what you think should change, and what you propose the change to be.</p>
+<h3>Chat</h3>
+<p>Join us on <a href="https://the-asf.slack.com/">Slack</a> in the #asfinfra channel for direct messaging!</p>
+<h3>Request resources/tasks/projects</h3>
+<p>Please create a <a href="https://issues.apache.org/jira/">Jira</a> ticket for your request.</p>
+<p>Review the <a href="jira-guidelines">guidelines for creating a Jira ticket</a>.</p>
+<h3>Suggest a service, or an enhancement to an existing service</h3>
+<p>Visit the <a href="https://github.com/apache/infrastructure-ideas" target="_blank">Infra suggestion box</a>.</p>
+<h3>For general inquiries</h3>
+<p>General inquiries and questions should go to: <code>users@infra.apache.org</code>.</p>
+<p>To subscribe to that list, send an email, from the email address you want to use, to <code>users-subscribe@infra.apache.org</code>.</p>
+<h3>What we need to know</h3>
+<p>Here's a <a href="infra-contact.html">guide to what to tell us</a> so we can respond to your request quickly and appropriately.</p>
+<h3>In case of emergency</h3>
+<p>If there is an absolutely urgent problem that must be handled <strong>at once</strong>, such as a malicious hacker having an active root through shell on <code>archive.apache.org</code>, follow this escalation path:</p>
+<ol>
+<li>Send an email to <code>root@</code> and <code>private@infra</code> describing the issue. If you get no response within fifteen minutes...</li>
+<li>Create a message on the <code>#asfinfra</code> channel in the Slack Apache space (link is at the top of the page). If you get no response within ten minutes...</li>
+<li>Open a Jira ticket (link is higher in the page) for INFRA, with a priority of <strong>blocker</strong>.</li>
+</ol>
+
         </div>
       </div>
-    </div>    
-    <!-- bread crumb -->
-    <div class="row">
-      <div class="large-12 columns" style="font-size: 0.8rem; background-color: rgba(255,255,255,0.75); margin-bottom: 5px;">
-        <a href="/">Home</a>
-        <i class="fa fa-angle-double-right"></i>
-        <a href="https://infra-test.apache.org/contact.html">
-Contact Infrastructure        </a>
-      </div>
-    </div>
-    
-    
-    <!-- contents -->
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h2>
-              Contact Infrastructure
-          </h2>
-              <h3>Resource requests</h3>
-<p>Requests for resources and their adjustments should be handled through
-JIRA, unless a <a href="/self-serve/">self-serve</a> tool exists for the specific resource.</p>
-<p>Please use the <a href="https://infrahelp.apache.org">Service Desk Portal</a> for filing JIRAs.</p>
-<h3>Mailing list for general inquiries</h3>
-<p>General inquiries and questions should go to our user mailing list:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Mailing List</th>
-<th align="left">Subscribe Address</th>
-<th align="left">Archives (private):</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">users@infra.apache.org</td>
-<td align="left">users-subscribe@infra.apache.org</td>
-<td align="left"><a href="https://lists.apache.org/list.html?users@infra.apache.org">lists.apache.org</a></td>
-</tr>
-<tr>
-<td align="left">commits@infra.apache.org</td>
-<td align="left">commits-subscribe@infra.apache.org</td>
-<td align="left"><a href="https://lists.apache.org/list.html?commits@infra.apache.org">lists.apache.org</a></td>
-</tr>
-<tr>
-<td align="left">issues@infra.apache.org</td>
-<td align="left">issues-subscribe@infra.apache.org</td>
-<td align="left"><a href="https://lists.apache.org/list.html?issues@infra.apache.org">lists.apache.org</a></td>
-</tr>
-</tbody>
-</table>
-        </div>
-      </div>
-    </div>
     </div>    
     <!-- footer -->
     <div class="row">
       <div class="large-12 medium-12 columns">
         <p style="font-style: italic; font-size: 0.8rem; text-align: center;">
-          Copyright 2016, <a href="https://www.apache.org/">The Apache Software Foundation</a>, Licensed under the Apache License, Version 2.0.<br/>
-          Apache and the Apache feather logo are trademarks of The Apache Software Foundation.
+          Copyright 2024, <a href="https://www.apache.org/">The Apache Software Foundation</a>, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+          Apache&reg; and the Apache feather logo are trademarks of The Apache Software Foundation.
         </p>
       </div>
-    </div>    
-    <script src="https://infra-test.apache.org/theme/js/vendor/jquery.js"></script>
-    <script src="https://infra-test.apache.org/theme/js/vendor/what-input.js"></script>
-    <script src="https://infra-test.apache.org/theme/js/vendor/foundation.js"></script>
-    <script src="https://infra-test.apache.org/theme/js/app.js"></script>
+    </div>
+    <script type="application/ecmascript" src="/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"></script>      </div>
+  </main>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
